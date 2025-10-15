@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:yakovleva_pr6"
         mc:Ignorable="d"
-        Title="MainWindow" Height="650" Width="800">
+        Title="MainWindow" Height="600" Width="800">
     <DockPanel LastChildFill="False">
         <StackPanel Orientation="Horizontal"  DockPanel.Dock="Top" Background="SkyBlue">
             <Button Content="Главная" Width="175" Height="30" Margin="5"></Button>
@@ -32,7 +32,7 @@
             <Border Grid.Row="0" Grid.Column="0" Grid.RowSpan="6" BorderBrush="Black" BorderThickness="1" Margin="10">
                 <Button Content="Загрузить фото" Height="25" Margin="10" VerticalAlignment="Bottom"/>
             </Border>
-            
+
             <Label Content="ФИО:" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <Label Content="Email:" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <Label Content="Телефон:" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
@@ -49,14 +49,14 @@
                 <RadioButton Margin="5">Женский</RadioButton>
             </StackPanel>
             <TextBox Grid.Row="5" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center" Width="350" Height="25"/>
-            
+
             <StackPanel Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
                 <Label Content="Подтверждение пароля:" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
                 <TextBox Width="335" Height="25"/>
             </StackPanel>
         </Grid>
 
-        <WrapPanel Background="LightGray" Width="700" Height="200" HorizontalAlignment="Center" DockPanel.Dock="Top">
+        <WrapPanel Background="LightGray" Margin="25" DockPanel.Dock="Top">
             <Label Content="* Пароль должен содержать минимум 8 символов." Margin="10"/>
             <Label Content="* Все поля обязательны." Margin="10"/>
             <Label Content="* Email должен быть в формате name@mail.com." Margin="10"/>
